@@ -5,15 +5,31 @@ nav{.flex(column,center,center);
   width:100%;
   background-color:#F6F6F6;
   padding:2rem;
-
+  @media @phone{
     position:relative;}
   h1{font-size:4rem;
     margin-bottom:25px;
-
+    animation:colors 10s infinite;
+    @media @tiny{font-size:2.2rem;
       color:#F94746;}//tiny
   }//h1
-  ul{.flex(row,space-between,center);
+  @keyframes colors{
+    0%{color:#9199AD;  text-shadow:2px 2px #215A9E;}
+    10%{color:#215A9E;  text-shadow:2px 2px #F7F3F4;}
+    20%{color:#F7F3F4;  text-shadow:2px 2px #008080;}
+    30%{color:#008080;  text-shadow:2px 2px #F79AF7;}
+    40%{color:#F79AF7;  text-shadow:2px 2px #3BB249;}
+    50%{color:#3BB249;  text-shadow:2px 2px #FEDF17;}
+    60%{color:#FEDF17;  text-shadow:2px 2px #F048EF;}
+    70%{color:#F048EF;  text-shadow:2px 2px #30D0CA;}
 
+    80%{color:#30D0CA;    text-shadow:2px 2px #901CB3;}
+    90%{color:#901CB3;    text-shadow:2px 2px #E4174A;}
+    100%{color:#E4174A;    text-shadow:2px 2px #215A9E;}
+
+  }
+  ul{.flex(row,space-between,center);
+    @media @small{.flex(column,center,center);}//media
   }//ul
 
   a{
@@ -21,6 +37,9 @@ nav{.flex(column,center,center);
     margin:2rem;
     font-size:2rem;
     text-decoration:none;
-
+    @media @phone{margin:1rem;}//media
   }//a
-
+  @media @tiny{
+    border-bottom:dashed 1px #F94746;}
+}//nav
+	

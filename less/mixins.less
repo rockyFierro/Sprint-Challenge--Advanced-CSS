@@ -1,29 +1,18 @@
-// Navigation code here
-nav{.flex(column,center,center);
-  position:fixed;
-  margin-bottom:50px;
-  width:100%;
-  background-color:#F6F6F6;
-  padding:2rem;
-  @media @phone{
-    position:relative;}
-  h1{font-size:4rem;
-    margin-bottom:25px;
-    @media @tiny{font-size:2.2rem;
-      color:#F94746;}//tiny
-  }//h1
-  ul{.flex(row,space-between,center);
-    @media @small{.flex(column,center,center);}//media
-  }//ul
+// Mixins Here
+.flex(@direction, @justify, @align){
+  display:flex;
+  flex-direction:@direction;
+  justify-content:@justify;
+  align-items:@align;
+}
 
-  a{
-    color:#464A67;
-    margin:2rem;
-    font-size:2rem;
-    text-decoration:none;
-    @media @phone{margin:1rem;}//media
-  }//a
-  @media @tiny{
-    border-bottom:dashed 1px #F94746;}
-}//nav
-	
+.button(@padding-tb,@padding-lr){
+  display:inline-block;
+  background:#333;
+  color:#fff;
+  font-size:2rem;
+  padding:@padding-tb @padding-lr;
+  border:1px solid #f6f6f6;
+  border-radius:5px;
+}
+
