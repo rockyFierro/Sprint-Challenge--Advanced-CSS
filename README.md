@@ -32,17 +32,17 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+    What is the difference between an adaptive website and a fully responsive website? Adaptive Website use absolute measurements(px), they can still respond but there is A LOT of planning done and it will never feel fluid. Responsive layouts/sites use relative measurements(percentages,rems) and will feel fluid, they still require a lot of planning but the smooth transitions will be all the more rewarding.
 
-2. Describe what it means to be mobile first vs desktop first.
+    Describe what it means to be mobile first vs desktop first. mobile first means that you begin by marking up and stylizing the mobile version first - this allows a lot more thought to go into the design as you begin which is great because it forces designers to consider content first, then stylizing, then media while thinking about file-size. as the screen expands you begin thinking about filler and better use of larger spaces and larger screens. desktop first is just the opposite as you begin with large screens and though content is first you also have a lot to fill in. and as your screen size decreases a lot to 'squish' into a smaller package.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    What does font-size: 62.5% in the html tag do for us when using rem units? setting the font size to 62.5% is great because it is as close as percent is going to get to 16pt, and your rems will be based on this throughout the page.
 
-4. How would you describe preprocessing to someone new to CSS?
+    How would you describe preprocessing to someone new to CSS? preprocessing allows you to write code that is simpler than CSS which will be compiled into a more complicated CSS file.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? I like nesting, i like using @ for variables instead of -- ...for all its pros i feel like preprocessing (maybe just at this point of my development) abstracts too much CSS to allow a proper understanding of what is happening in CSS and may restrict creativity.
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section will prevent you from passing this challenge.
 
 ## Project Set Up
 
