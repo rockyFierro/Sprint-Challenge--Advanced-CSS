@@ -165,8 +165,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  margin-bottom: 50px;
+  position: sticky;
   width: 100%;
   background-color: #F6F6F6;
   padding: 2rem;
@@ -273,14 +272,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home {
-  padding-top: 150px;
-}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .main-header {
+  width: 100%;
+}
+.home .intro .main-header img {
+  width: 100%;
+  height: auto;
 }
 .home .space-images {
   display: flex;

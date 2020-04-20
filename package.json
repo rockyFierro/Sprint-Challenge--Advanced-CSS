@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "less": "^3.11.1",
+    "less-watch-compiler": "^1.14.6"
+  },
+  "name": "Sprint-Challenge--Advanced-CSS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rockyFierro/Sprint-Challenge--Advanced-CSS.git",
+  "author": "Rocky Fierro <finnslighthouse@gmail.com>",
+  "license": "MIT"
+}
